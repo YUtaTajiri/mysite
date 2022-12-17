@@ -13,7 +13,7 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 from pathlib import Path
 
 try: 
-    from .local_settings import *
+    from .local_settings import SECRET_KEY
 except ImportError:
     pass    
 
