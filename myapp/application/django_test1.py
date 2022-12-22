@@ -40,6 +40,5 @@ def get_title2():
         result2 =  link2.a.get('href')
         list2.append([data2_limit, result2])
 
-    
 
 
