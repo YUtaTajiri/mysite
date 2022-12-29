@@ -18,7 +18,8 @@
         <button type="submit" name="get_button">記事を取得する</button>
     </form>
     <div class = 'container'>
-        <h1>サイト1</h1>
+        <h1>walkerplus</h1>
+        <p><a href="https://www.walkerplus.com/event_list/today/ar1046/">元HPリンク</a></p>
         <ul>
             <table border="2">
                 <tr>
@@ -33,8 +34,8 @@
                 {% endfor %}
             </table>
         </ul>
-        <h1>サイト2</h1>
-        <p>※タイトルは50文字まで表示されます。</p>
+        <h1>カゴシマプラス</h1>
+        <p><a href="https://www.tjkagoshima.com/events/">元HPリンク</a></p>
         <ul>
             <table border="2">
                 <tr>
@@ -42,6 +43,22 @@
                     <th>URL</th>
                 </tr>
                 {% for post1, post2 in get2 %}
+                <tr>
+                 <td>{{post1}}</td>
+                 <td><a href={{post2}}>{{post2}}</a></td>
+                </tr>
+                {% endfor %}
+            </table>
+        </ul>
+        <h1>鹿児島中央駅AMUイベント情報</h1>
+        <p><a href="https://amu.jrkagoshimacity.com/event/">元HPリンク</a></p>
+        <ul>
+            <table border="2">
+                <tr>
+                    <th>タイトル</th>
+                    <th>URL</th>
+                </tr>
+                {% for post1, post2 in get3 %}
                 <tr>
                  <td>{{post1}}</td>
                  <td><a href={{post2}}>{{post2}}</a></td>

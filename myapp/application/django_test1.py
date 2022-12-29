@@ -40,5 +40,19 @@ def get_title2():
         result2 =  link2.a.get('href')
         list2.append([data2_limit, result2])
 
-
+#webサイト3
+site_data3 = requests.get('https://amu.jrkagoshimacity.com/event/')
+soup3 = BeautifulSoup(site_data3.content, 'html.parser')
+links3 = soup3.select('.card__item__link')
+list3 = []
+def get_title3():
+    for link3 in links3:
+        data3 = link3.text.rstrip()
+        result3 =link3.get('href')
+    #https~が既についた状態で抽出されるタグがある為
+        if 'https' in result3:
+            list3.append([data3, result3])
+        else:
+            result3_new = 'https://amu.jrkagoshimacity.com/' + result3
+            list3.append([data3, result3_new])
 

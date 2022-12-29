@@ -18,6 +18,5 @@ from django.urls import path, include
 import myapp.views
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('create_list/',myapp.views.create_list, name='django_test1'),
     path('', include('myapp.urls')),
 ]
