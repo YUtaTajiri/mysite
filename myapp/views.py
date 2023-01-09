@@ -2,7 +2,7 @@ from django.shortcuts import render
 from myapp.application import django_test1
 from django.views.generic import CreateView
 import datetime
-import schedule
+
 
 
 
