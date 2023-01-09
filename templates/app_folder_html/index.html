@@ -10,12 +10,11 @@
 </head>
 <body>
     {% block content %}
-    <h1>ボタンを押すたび、1～10のランダムな数字が表示されます→{{random_number}}</h1>
-    <h1>ボタンを押すと鹿児島のイベント情報がリストに表示されます。</h1>
-    <h3>{{dt_now}}  リストを取得した時刻</h3>
+    <h1>ページを更新すると鹿児島の最新イベント情報がリストに表示されます。</h1>
+    <h3>{{dt_now}}  最後にリストを取得した時刻</h3>
     <form action="" method="post">
         {% csrf_token %}
-        <button type="submit" name="get_button">記事を取得する</button>
+        <button type="submit" name="get_button">リストを更新する</button>
     </form>
     <div class = 'container'>
         <h1>walkerplus</h1>
